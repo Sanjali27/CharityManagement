@@ -2,9 +2,24 @@
 <html>
     <head>
         <link rel= "stylesheet" href="style.css">
-    </head>
-  <head>
+  
     <h1>Tic Tac Toe</h1>
+    <script>
+     var flag=0;
+      function myfunc(e){
+        if(flag++%2===0)
+        {
+          e.innerHTML="X";
+        document.getElementById('display').innerText="Player B's turn";
+        }
+        else
+        {
+          e.innerHTML="0";
+        document.getElementById('display').innerHTML="Player A's turn";
+        }
+      }
+      
+    </script>
   </head>
   <body>
     <div class="row">
@@ -12,23 +27,23 @@
       
     <table class="ttt" >
       <tr>
-        <td class="tic">0</td>
-        <td class="tic">0</td>
-        <td class="tic">X</td>
+        <td class="tic" onclick="myfunc(this)"></td>
+        <td class="tic" onclick="myfunc(this)"></td>
+        <td class="tic" onclick="myfunc(this)"></td>
        </tr>
       <tr>
-        <td class="tic">X</td>
-        <td class="tic">0</td>
-       <td class="tic">X</td>
+        <td class="tic" onclick="myfunc(this)"></td>
+        <td class="tic" onclick="myfunc(this)"></td>
+       <td class="tic" onclick="myfunc(this)"></td>
       </tr>
       <tr>
-        <td class="tic">X</td>
-        <td class="tic">0</td>
-        <td class="tic">X</td>
+        <td class="tic" onclick="myfunc(this)"></td>
+        <td class="tic" onclick="myfunc(this)"></td>
+        <td class="tic" onclick="myfunc(this)"></td>
       </tr>
     </table>
   
-      <p class="player">It's Player A's turn</p>
+      <p class="player" id="display">Player A's turn</p>
    
    
 </div>
