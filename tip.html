@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/Users/shreyaamitabh/Downloads/bootstrap-4.4.1-dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="tip.css" >
+    <title>Bootstrap example</title>
+</head>
+<body>
+   <div class= "container">
+    <div class="jumbotron">
+        <p class= "heading">SHREYA'S RESTAURANT</p>
+        
+      </div>
+      <div class= "container1">
+          <form >
+            <p class="tag">What is your bill amount?</p>
+              <input style="height:60px" type= "number" id="amount" class="tag">
+              <p style=" width:500px; margin-top: 16px;" class="tag">How was your experience here?</p>
+              <label  class="checkbox-inline"><input style="margin-left: 9em;" type="checkbox" id="good"><button type="button"  class="btn btn-success check">Good</button></label>
+                <label  class="checkbox-inline"><input  type="checkbox" id="avg"><button type="button"  class="btn btn-warning check">Average</button></label>
+               <label  class="checkbox-inline"><input type="checkbox" id="bad"><button type="button" class="btn btn-danger check">Bad</button></label>
+               <br><button class=" sub" type="button" onclick="myFunction()">Submit</button><br>
+            </form>
+          <!-- <p class="sh"  id="here"></p> -->
+          <!-- <div class="alert alert-success">
+            <strong id="here"></strong> 
+          </div> -->
+      </div>
+
+   </div>
+  
+      
+   <script>
+       
+    
+    function myFunction() {
+      var x = document.getElementById("amount").value;
+      var tip;
+      if(document.getElementById('good').checked)
+      {
+        tip= .18*x;
+      }
+      else  if(document.getElementById('avg').checked)
+      {
+        tip= .1*x;
+      } 
+      else{
+        tip= .05*x;
+      }
+    alert("Tip is "+tip);
+    //   document.getElementById("here").innerHTML = "Tip is "+ Math.round(tip);
+    }
+       
+    </script> 
+</body>
+</html>
