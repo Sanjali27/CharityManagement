@@ -1,0 +1,18 @@
+.card{
+    border:0;
+}
+.card-img-top{
+    width:100%; border-radius: 45px; opacity: 0.9;
+}
+.card-body{
+    font-family: fantasy; color: darkslategrey;
+}
+.song1{
+    font-size: 70px; font-family: fantasy; color: darkslategrey;text-align: center;font-weight: bold;
+}
+.song2{
+    font-size: 40px; font-family: fantasy; color: darkslategrey;text-align: center;font-weight: bold;
+}
+.song3{
+    font-size: 20px; font-family: fantasy; color: darkslategrey;text-align: center;font-weight: bold;
+}
