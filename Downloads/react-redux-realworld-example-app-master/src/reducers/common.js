@@ -18,7 +18,7 @@ import {
 } from '../constants/actionTypes';
 
 const defaultState = {
-  appName: 'Conduit',
+  appName: 'Charity System Management',
   token: null,
   viewChangeCounter: 0
 };
